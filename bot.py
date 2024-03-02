@@ -15,6 +15,14 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send(f'Cześć, jestem bot{bot.user}!')
 @bot.command()
+async def Serfero (ctx):
+    await ctx.send(f'cześć podsyłam ci link do niego[https://www.youtube.com/@Serfero]')
+
+@bot.command()
+async def Kaluch (ctx):
+    await ctx.send(f'cześć podsyłam ci link do niego[https://www.youtube.com/@KaluchYT]')
+
+@bot.command()
 async def repeat(ctx, times: int, content='repeating...'):
     """Repeats a message multiple times."""
     for i in range(times):
